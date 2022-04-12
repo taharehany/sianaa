@@ -1,0 +1,75 @@
+//header
+header 
+    div(class="top-part")
+        div(class="container")
+            div(class="content")
+                div(class="some-info")
+                    div(class="info")
+                        span(class="icon")
+                            i(class="bi bi-telephone")
+                        p
+                            a(href="tel:+1 (672) 226-9703") +1 (672) 226-9703
+                    div(class="info")
+                        span(class="icon")
+                            i(class="bi bi-envelope")
+                        p
+                            a(href="mailto:qicyr@mailinator.com") qicyr@mailinator.com
+                div(class="links")
+                    a(href="https://www.facebook.com/", target="_blank", aria-label="facebook link")
+                        i(class="bi bi-facebook")
+                    a(href="https://www.twitter.com/", target="_blank", aria-label="twitter link")
+                        i(class="bi bi-twitter")
+                    a(href="https://www.instagram.com/", target="_blank", aria-label="instagram link")
+                        i(class="bi bi-instagram")
+                    a(href="https://www.linkedin.com/", target="_blank", aria-label="linkedin link")
+                        i(class="bi bi-linkedin")
+    //navbar desktop
+    nav(class="navbar main-nav navbar-expand-lg")
+        div(class="container")
+            a(class="navbar-brand" href="index.html") 
+                img(data-src="images/logo.svg" class="img-fluid" alt ="")
+            div(class="phone-number")
+                div(class="icon")
+                    i(class="bi bi-telephone")
+                div(class="text")
+                    span كلمنا الآن
+                    a(href="tel:01141477568") 01141477568
+            div(class="group")
+                button(class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#side_menu" aria-controls="side_menu" aria-expanded="false" aria-label="Toggle navigation")
+                    div(class="hamburger-menu")
+                        span
+                        span
+                        span
+            div(class="collapse navbar-collapse" id="navbarNav")
+                ul(class="navbar-nav")
+                    li(class="nav-item active")
+                        a(class="nav-link" aria-current="page" href="index.html") الرئيسية
+                    li(class="nav-item")
+                        a(class="nav-link" href="#about") من نحن
+                    li(class="nav-item")
+                        a(class="nav-link" href="#services") خدماتنا
+                    li(class="nav-item")
+                        a(class="nav-link" href="#clients") عملائنا
+                    li(class="nav-item")
+                        a(class="nav-link" href="#contact") تواصل معنا
+    //navbar desktop
+
+    //side menu in mobile only
+    div(class="offcanvas offcanvas-start" id="side_menu" data-bs-scroll="true" tabindex="-1" aria-labelledby="side_menu_label")
+        div(class="offcanvas-header")
+            button(type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" data-bs-target="#side_menu" aria-controls="side_menu" aria-label="Close")
+        div(class="offcanvas-body")
+            div(class="navbar")
+                div(class="collapsed navbar-collapse" id="navbarNavSide")
+                    ul(class="navbar-nav")
+                        li(class="nav-item active")
+                            a(class="nav-link" aria-current="page" href="index.html") الرئيسية
+                        li(class="nav-item")
+                            a(class="nav-link" href="#") من نحن
+                        li(class="nav-item")
+                            a(class="nav-link" href="#") خدماتنا
+                        li(class="nav-item")
+                            a(class="nav-link" href="#") عملائنا
+                        li(class="nav-item")
+                            a(class="nav-link" href="#") تواصل معنا
+//header
