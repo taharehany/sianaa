@@ -1,6 +1,7 @@
 //main slider
 section(class="main-slider" dir="ltr")
-    div(class="main-slider-carousel owl-carousel owl-theme")
+    //- div(class="main-slider-carousel owl-carousel owl-theme")
+    div(class="main-slider-carousel")
         div(class="slider-item")
             div(class="slider-image" style="background-image:url('images/slider/01.jpg')")
             div(class="item-details")
@@ -13,7 +14,14 @@ section(class="main-slider" dir="ltr")
                             div(class="outer-btn")
                                 a(href="#about" class="btn") 
                                     span المزيد عنا
-        div(class="slider-item")
+                            div(class="phone")
+                                div(class="icon")
+                                    i(class="bi bi-telephone") 
+                                div(class="text")
+                                    h4 اتصل بنا
+                                    p ‎
+                                        a(href="tel:01141477568") 01141477568
+        //- div(class="slider-item")
             div(class="slider-image" style="background-image:url('images/slider/02.jpg')")
             div(class="item-details")
                 div(class="container")
@@ -25,7 +33,7 @@ section(class="main-slider" dir="ltr")
                             div(class="outer-btn")
                                 a(href="#about" class="btn") 
                                     span المزيد عنا
-        div(class="slider-item")
+        //- div(class="slider-item")
             div(class="slider-image" style="background-image:url('images/slider/03.jpg')")
             div(class="item-details")
                 div(class="container")
@@ -38,6 +46,21 @@ section(class="main-slider" dir="ltr")
                                 a(href="#about" class="btn") 
                                     span المزيد عنا
 //main slider
+
+//clients
+section(class="clients" id="clients")
+    div(class="container")
+        div(class="content")
+            div(class="clients-carousel owl-carousel owl-theme")
+                div(class="item")
+                    img(class="img-fluid" data-src="images/clients/01.png" alt="")
+                div(class="item")
+                    img(class="img-fluid" data-src="images/clients/02.png" alt="")
+                div(class="item")
+                    img(class="img-fluid" data-src="images/clients/03.png" alt="")
+                div(class="item")
+                    img(class="img-fluid" data-src="images/clients/04.webp" alt="")
+//clients
 
 //about us
 section(class="about" id="about")
@@ -170,46 +193,46 @@ section(class="about" id="about")
 section(class="services" id="services")
     div(class="container")
         div(class="main-title")
-            h2 خدمات صيانة توشيبا
+            h2 خدماتنا
             p نحن نهدف إلى تقديم الحل الأمثل لكافة المشاكل عن طريق المنتجات والخدمات الأتية:
         div(class="content")
             div(class="row")
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/01.jpg" alt="")
                         div(class="details")
                             h3(class="title") مثال على عنوان الخدمة
                             p نقدم لك في مركز صيانة توشيبا ولأسرتك كل أجزاء قطع الغيار الاصلية بخصم يتعدى الى 50 % من الثمن الأساسي
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/02.jpg" alt="")
                         div(class="details")
                             h3(class="title") مثال على عنوان الخدمة
                             p نقدم لك في مركز صيانة توشيبا ولأسرتك كل أجزاء قطع الغيار الاصلية بخصم يتعدى الى 50 % من الثمن الأساسي
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/03.jpg" alt="")
                         div(class="details")
                             h3(class="title") مثال على عنوان الخدمة
                             p نقدم لك في مركز صيانة توشيبا ولأسرتك كل أجزاء قطع الغيار الاصلية بخصم يتعدى الى 50 % من الثمن الأساسي
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/04.jpg" alt="")
                         div(class="details")
                             h3(class="title") مثال على عنوان الخدمة
                             p نقدم لك في مركز صيانة توشيبا ولأسرتك كل أجزاء قطع الغيار الاصلية بخصم يتعدى الى 50 % من الثمن الأساسي
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/05.jpg" alt="")
                         div(class="details")
                             h3(class="title") مثال على عنوان الخدمة
                             p نقدم لك في مركز صيانة توشيبا ولأسرتك كل أجزاء قطع الغيار الاصلية بخصم يتعدى الى 50 % من الثمن الأساسي
-                div(class="col-lg-4 col-md-6 box")
+                div(class="col-lg-6 col-md-6 box")
                     div(class="service-box")
                         div(class="image")
                             img(class="img-fluid" data-src="images/services/06.jpg" alt="")
@@ -255,21 +278,10 @@ section(class="contact")
                                     div(class="form-group")
                                         textarea(class="form-control" rows="6" placeholder="الرسالة")
                             div(class="contact-btn")
-                                button(class="btn" type="submit") إرسال الآن
+                                div(class="outer-btn")
+                                    button(class="btn" type="submit") 
+                                        span إرسال الآن
 //contact us
-
-//clients
-//- section(class="clients" id="clients")
-    div(class="container")
-        div(class="content")
-            div(class="clients-carousel owl-carousel owl-theme")
-                div(class="item")
-                    img(class="img-fluid" data-src="images/clients/01.png" alt="")
-                div(class="item")
-                    img(class="img-fluid" data-src="images/clients/02.png" alt="")
-                div(class="item")
-                    img(class="img-fluid" data-src="images/clients/03.png" alt="")
-//clients
 
 //map
 section(class="map")

@@ -21,30 +21,30 @@ $(document).ready(function () {
   });
 
   //main slider owl
-  $('.main-slider-carousel').owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 10000,
-    items: 1,
-    nav: true,
-    // rtl: true,
-    dots: true,
-    // dotsEach: 3,
-    smartSpeed: 1000,
-    autoplaySpeed: true,
-    navText: ["<i class='bi bi-arrow-right'></i>", "<i class='bi bi-arrow-left'></i>"],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 1,
-      },
-      992: {
-        items: 1,
-      }
-    }
-  });
+  // $('.main-slider-carousel').owlCarousel({
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplayTimeout: 10000,
+  //   items: 1,
+  //   nav: true,
+  //   // rtl: true,
+  //   dots: true,
+  //   // dotsEach: 3,
+  //   smartSpeed: 1000,
+  //   autoplaySpeed: true,
+  //   navText: ["<i class='bi bi-arrow-right'></i>", "<i class='bi bi-arrow-left'></i>"],
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     768: {
+  //       items: 1,
+  //     },
+  //     992: {
+  //       items: 1,
+  //     }
+  //   }
+  // });
 
   //clients slider owl
   $(".clients-carousel").owlCarousel({
