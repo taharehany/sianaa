@@ -18,6 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      :root {
+          --main_color: #1A5CE0;
+          --second_color: #FFC000;
+      }
+    </style>
   </head>
   <body>
     <div class="main-wrapper home_1">
@@ -55,6 +61,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="index2.html">الرئيسية 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
                 <li class="nav-item"><a class="nav-link" href="#clients">عملائنا</a></li>
@@ -74,10 +81,11 @@
               <div class="collapsed navbar-collapse" id="navbarNavSide">
                 <ul class="navbar-nav">
                   <li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">الرئيسية</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">خدماتنا</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">عملائنا</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index2.html">الرئيسية 2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#clients">عملائنا</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
                 </ul>
               </div>
             </div>
@@ -211,6 +219,22 @@
       <!--footer-->
     </div>
     <!--GetButton.io widget-->
+    <script type="text/javascript">
+      (function () {
+      var options = {
+      whatsapp: "01030189787", // WhatsApp number
+      call: "01030189787", // Call phone number
+      call_to_action: "راسلنا", // Call to action
+      button_color: "#FF6550", // Color of button
+      position: "left", // Position may be 'right' or 'left'
+      order: "whatsapp,call", // Order of buttons
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
     <!--GetButton.io widget-->
     <!--scripts-->
     <script src="js/jquery-3.6.0.min.js"></script>
