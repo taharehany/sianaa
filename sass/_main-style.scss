@@ -12,7 +12,7 @@ body {
 }
 
 .toast-header {
-	background-color: $main_color;
+	background-color: var(--main_color);
 	color: #fff
 }
 
@@ -45,7 +45,7 @@ header {
 	// }
 
 	.top-part {
-		background-color: $main_color;
+		background-color: var(--main_color);
 		padding: 12px 0;
 
 		.content {
@@ -89,7 +89,7 @@ header {
 					a {
 						font-size: 16px;
 						margin-bottom: 0;
-						color: #ddd;
+						color: #fff;
 					}
 
 					.icon {
@@ -112,7 +112,7 @@ header {
 				white-space: nowrap;
 
 				a {
-					color: $second_color;
+					color: #fff;
 					margin-inline-end: 15px;
 
 					&:last-child {
@@ -154,7 +154,7 @@ header {
 			// 	bottom: 0;
 			// 	width: 300px;
 			// 	// z-index: -1;
-			// 	border-top: 146px solid $second_color;
+			// 	border-top: 146px solid var(--second_color);
 			// 	border-left: 76px solid transparent;
 			// }
 
@@ -165,7 +165,7 @@ header {
 			// 	right: 265px;
 			// 	height: 50px;
 			// 	width: 70px;
-			// 	border-bottom: 50px solid rgba($second_color, .90);
+			// 	border-bottom: 50px solid rgba(var(--second_color), .90);
 			// 	border-right: 27px solid transparent;
 			// 	border-left: 35px solid transparent;
 			// 	// z-index: -1;
@@ -196,7 +196,7 @@ header {
 
 				i {
 					font-size: 26px;
-					color: $main_color;
+					color: var(--main_color);
 				}
 			}
 
@@ -232,7 +232,7 @@ header {
 				&:hover,
 				&.active {
 					.nav-link {
-						color: $main_color;
+						color: var(--main_color);
 
 						&::after {
 							width: 100%;
@@ -241,7 +241,7 @@ header {
 				}
 
 				&:not(:hover) {
-					color: $main_color;
+					color: var(--main_color);
 				}
 
 				&:last-child {
@@ -259,7 +259,7 @@ header {
 					&::after {
 						content: "";
 						position: absolute;
-						background-color: $main_color;
+						background-color: var(--main_color);
 						height: 2px;
 						left: 0;
 						bottom: 22px;
@@ -316,7 +316,7 @@ header {
 
 						&:hover {
 							color: #fff;
-							background-color: $main_color;
+							background-color: var(--main_color);
 						}
 					}
 				}
@@ -362,7 +362,7 @@ header {
 		.cart {
 			.btn {
 				@include borderRadius(50%);
-				background-color: $second_color;
+				background-color: var(--second_color);
 				color: #fff;
 				height: 45px;
 				width: 45px;
@@ -377,7 +377,7 @@ header {
 			}
 
 			.total-count {
-				background-color: $main_color;
+				background-color: var(--main_color);
 			}
 		}
 	}
@@ -397,7 +397,7 @@ header {
 		transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 		-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 		cursor: pointer;
-		display: none;
+		// display: none;
 
 		&:hover {
 			span {
@@ -557,7 +557,7 @@ section.main-slider {
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-image: linear-gradient(50deg, rgba(26, 92, 224, 0.5) 50%, rgba(26, 92, 224, 0.5) 50%);
+			background-image: linear-gradient(50deg, rgba(26, 92, 224, 0) 50%, rgba(26, 92, 224, 0.5) 50%);
 			z-index: 0;
 		}
 
@@ -579,7 +579,6 @@ section.main-slider {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding: 20px;
 			z-index: 1;
 			@include transition(all ease 0.3s);
 			@include boxshadow(0px 0px 20px 0px rgb(0 0 0 / 15%));
@@ -608,13 +607,13 @@ section.main-slider {
 
 			.item-btn {
 				@extend %btn_selector;
-				
+
 				.btn {
 					margin-inline-end: 30px;
 					border: none;
 
 					span {
-						background-color: $main_color;
+						background-color: var(--main_color);
 						padding: 17px 45px;
 					}
 				}
@@ -648,7 +647,7 @@ section.main-slider {
 					a {
 						font-weight: 700;
 						font-size: 22px;
-						color: $second_color;
+						color: var(--second_color);
 					}
 
 					p {
@@ -664,7 +663,7 @@ section.main-slider {
 			@include transition(all ease 0.3s);
 
 			&:hover {
-				background: $main_color;
+				background: var(--main_color);
 			}
 		}
 
@@ -690,7 +689,7 @@ section.main-slider {
 
 			.owl-dot.active span,
 			.owl-theme .owl-dots .owl-dot:hover span {
-				background-color: $second_color
+				background-color: var(--second_color)
 			}
 		}
 
@@ -749,7 +748,7 @@ section.about {
 			margin-bottom: 2rem;
 
 			.top-title {
-				color: $main_color;
+				color: var(--main_color);
 				font-size: 18px;
 				font-weight: 500;
 				margin-bottom: 15px;
@@ -772,7 +771,7 @@ section.about {
 
 			.image-text {
 				width: 100%;
-				background-color: $main_color;
+				background-color: var(--main_color);
 				display: -webkit-flex;
 				display: flex;
 				-webkit-justify-content: center;
@@ -830,7 +829,7 @@ section.about {
 			margin-bottom: 25px;
 
 			h3 {
-				color: $second_color;
+				color: var(--second_color);
 				font-size: 22px;
 				font-weight: 600;
 				margin-bottom: 10px
@@ -844,7 +843,7 @@ section.about {
 
 			.btn {
 				span {
-					background-color: $main_color;
+					background-color: var(--main_color);
 				}
 
 				i {
@@ -871,13 +870,13 @@ section.about {
 
 				i {
 					font-size: 32px;
-					color: $main_color;
+					color: var(--main_color);
 				}
 
 				a {
 					font-weight: 700;
 					font-size: 22px;
-					color: $second_color;
+					color: var(--second_color);
 				}
 
 				p {
@@ -914,7 +913,7 @@ section.video {
 		.vid-icon {
 			text-align: center;
 			margin: 0 auto 50px;
-			background-color: $main_color;
+			background-color: var(--main_color);
 			@include borderRadius(50%);
 			width: 90px;
 			height: 90px;
@@ -1032,12 +1031,12 @@ section.about-tabs {
 					position: absolute;
 					left: 10px;
 					top: 10px;
-					color: $main_color;
+					color: var(--main_color);
 					font-size: 25px
 				}
 
 				&.active {
-					background-color: $main_color;
+					background-color: var(--main_color);
 					color: #fff;
 
 					&::after {
@@ -1056,7 +1055,7 @@ section.about-tabs {
 					font-size: 36px;
 					font-weight: 600;
 					position: relative;
-					color: $main_color;
+					color: var(--main_color);
 					margin-bottom: 35px;
 				}
 
@@ -1092,7 +1091,7 @@ section.cta {
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-color: $main_color;
+		background-color: var(--main_color);
 		opacity: 0.9;
 		z-index: -1;
 	}
@@ -1156,7 +1155,7 @@ section.cta {
 					font-weight: 600;
 					color: #fff;
 					padding: 15px 30px;
-					background-color: $second_color;
+					background-color: var(--second_color);
 					@include borderRadius(0);
 
 					&:hover {
@@ -1216,7 +1215,7 @@ section.services {
 				border-width: 0 60px 60px 0;
 				border-style: solid;
 				border-color: transparent;
-				border-right-color: $main_color;
+				border-right-color: var(--main_color);
 
 				i {
 					position: absolute;
@@ -1273,11 +1272,11 @@ section.services {
 				// 	font-style: normal;
 				// 	font-variant: normal;
 				// 	font-size: 45px;
-				// 	color: $main_color;
+				// 	color: var(--main_color);
 				// }
 
 				.title {
-					color: $main_color;
+					color: var(--main_color);
 					font-size: 24px;
 					font-weight: 700;
 				}
@@ -1353,7 +1352,7 @@ section.contact-bg {
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-color: $main_color;
+		background-color: var(--main_color);
 		opacity: 0.7;
 		z-index: -1;
 	}
@@ -1448,7 +1447,7 @@ section.contact {
 
 			.btn {
 				span {
-					background-color: $main_color;
+					background-color: var(--main_color);
 				}
 
 				i {
@@ -1460,7 +1459,7 @@ section.contact {
 		.successfully {
 			font-size: 16px;
 			margin-bottom: 25px;
-			color: $second_color;
+			color: var(--second_color);
 		}
 	}
 }
@@ -1469,7 +1468,7 @@ section.contact {
 
 //contact info
 section.contact-info {
-	background-color: $main_color;
+	background-color: var(--main_color);
 	padding: 100px 0 50px;
 	background-image: url(../images/bgs/map-footer.png);
 	background-repeat: no-repeat;
@@ -1505,7 +1504,7 @@ section.contact-info {
 				// 	font-style: normal;
 				// 	font-variant: normal;
 				// 	font-size: 80px;
-				// 	color: $main_color;
+				// 	color: var(--main_color);
 				// }
 
 				i {
@@ -1515,7 +1514,7 @@ section.contact-info {
 					z-index: 5;
 					width: 55px;
 					height: 55px;
-					background-color: $main_color;
+					background-color: var(--main_color);
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -1525,7 +1524,7 @@ section.contact-info {
 			}
 
 			h4 {
-				color: $main_color;
+				color: var(--main_color);
 				font-size: 20px;
 			}
 
@@ -1575,7 +1574,7 @@ section.contact-info {
 				@include transition(all ease .3s);
 
 				&:hover {
-					background-color: $second_color;
+					background-color: var(--second_color);
 				}
 			}
 		}
@@ -1615,6 +1614,57 @@ section.clients {
 
 //clients
 
+.home_2 {
+	section.main-slider {
+		.slider-item {
+			.item-details {
+				.item-text {
+					margin: auto;
+					text-align: center;
+				}
+
+				.item-btn {
+					justify-content: center;
+
+					.phone {
+						text-align: initial;
+
+						a {
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: linear-gradient(50deg, rgba(237, 27, 48, 0.28) 50%, rgba(237, 27, 48, 0.28) 50%);
+				z-index: 0;
+			}
+		}
+	}
+
+	section.services {
+		.content {
+			.service-box {
+				.details {
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+				}
+				.image {
+					padding: 7px;
+				}
+			}
+		}
+	}
+}
+
 //footer
 footer {
 	background-color: #ddd;
@@ -1637,7 +1687,7 @@ footer {
 				text-transform: capitalize;
 
 				a {
-					color: $main_color;
+					color: var(--main_color);
 					margin-inline-start: 5px;
 				}
 			}

@@ -18,8 +18,14 @@ html(lang="ar" dir="rtl")
         block website_title
             title #{website_title} | الرئيسية
         include includes/styles.pug
+
+        style.
+            :root {
+                --main_color: #ED1B30;
+                --second_color: #1b99ed;
+            }
     body
-        div(class="main-wrapper")
+        div(class="main-wrapper home_2")
             //PreLoader
             //- div(class="loader")
                 video(width="auto" height="auto" muted autoplay loop)
@@ -31,6 +37,6 @@ html(lang="ar" dir="rtl")
             include includes/header.pug
 
             block home_block 
-                include includes/home.pug
+                include includes/home2.pug
             include includes/footer.pug
         include includes/scripts.pug

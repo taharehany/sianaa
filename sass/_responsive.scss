@@ -18,7 +18,22 @@
             display: inline-block;
         }
 
+        .top-part {
+            .content {
+                .some-info {
+                    .info {
+                        border-inline-end: 0;
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
         .navbar {
+            padding: 10px 0;
             .navbar-nav {
                 .nav-item {
                     &.active {
@@ -136,26 +151,33 @@
         .slider-item {
             .item-details {
                 text-align: center;
+
                 .title {
                     font-size: 26px;
                 }
+
                 p {
                     font-size: 18px;
                 }
+
                 .item-text {
-                    background-color: rgba(0, 0,0,.7);
+                    background-color: rgba(0, 0, 0, .7);
                     padding: 25px;
                 }
             }
+
             img {
                 object-position: left;
                 opacity: .5;
             }
         }
     }
-    section.video, section.contact-bg {
+
+    section.video,
+    section.contact-bg {
         padding: 100px 0;
     }
+
     section.contact .content {
         margin-top: -160px;
     }
@@ -278,6 +300,44 @@
     .error {
         h2 {
             font-size: 8rem;
+        }
+    }
+
+    section.main-slider .slider-item .item-details {
+        .item-btn {
+            justify-content: center;
+
+            .outer-btn {
+                display: none;
+            }
+        }
+
+        .item-text {
+            padding: 15px;
+        }
+    }
+
+    section.about {
+        padding-top: 0;
+
+        .content {
+            .about-image {
+                grid-template-columns: 100%;
+
+                .image {
+                    margin-inline-start: 0;
+                    margin-top: 10px;
+                }
+            }
+
+            .about-btn {
+                .btn {span {
+                    padding: 15px 20px;
+                }}
+                .phone {
+                    padding-inline-end: 0;
+                }
+            }
         }
     }
 }
